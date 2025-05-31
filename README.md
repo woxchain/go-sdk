@@ -1,16 +1,22 @@
-# Woxchain Go SDK
+# ⚙️ Woxchain Go SDK
 
-Official Go SDK for interacting with Woxchain Testnet.
+> Official Go SDK for interacting with the [Woxchain Testnet](https://testnet.woxscan.com) via JSON-RPC.
 
-## Usage
+Woxchain Go SDK allows developers to seamlessly connect to the Woxchain blockchain, fetch account balances, and interact with EVM-compatible features using the Go programming language.
 
-```go
-import "github.com/woxchain/go-sdk/wox"
+---
 
-func main() {
-    wox.Connect("https://rpc.woxscan.com")
+## 🚀 Features
 
-    balance, _ := wox.GetBalance("0x1234...")
-    fmt.Println("Balance:", balance)
-}
-```
+- 🔌 Connect to any Woxchain RPC node
+- 💰 Fetch wallet balances
+- 🧮 Convert ETH/WOX to Wei
+- 🛠️ Easily extensible with custom methods (transaction sending, contract call, etc.)
+- ✅ Fully compatible with EVM-based tooling
+
+---
+
+## 📦 Installation
+
+```bash
+go get github.com/woxchain/go-sdk
